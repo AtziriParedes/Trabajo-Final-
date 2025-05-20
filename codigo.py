@@ -112,6 +112,7 @@ def IMDB(pagina):
 
 def limpieza_datos(df:pd.DataFrame):
    df.head()
+   df.info()
 
 
 
