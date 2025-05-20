@@ -116,6 +116,7 @@ def limpieza_datos(df:pd.DataFrame):
 
 
 
+
    print(df)
 
 
