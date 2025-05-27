@@ -71,7 +71,7 @@ def IMDB(pagina):
         try:
 
             btn = nave.find_element(By.XPATH, "//span[text()='50 más']")
-            nave.execute_script("arguments[0].scrollIntoView(true);", btn)
+
             time.sleep(10)
             btn.click()
             time.sleep(10)
