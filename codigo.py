@@ -71,6 +71,7 @@ def IMDB(pagina):
         try:
 
             btn = nave.find_element(By.XPATH, "//span[text()='50 más']")
+            nave.execute_script("arguments[0].scrollIntoView(true);", btn)  # subir un poco a que se encuentre el boton 50 mas
 
             time.sleep(10)
             btn.click()
@@ -85,7 +86,6 @@ def IMDB(pagina):
     df = pd.DataFrame(producto)
     df.to_csv("dataset/pelicula.csv", index=False)
 
-#dashboard
 
 if __name__ == "__main__":
     pagina = 6
