@@ -90,5 +90,5 @@ def IMDB(pagina):
 if __name__ == "__main__":
     pagina = 6
     IMDB(pagina)
-    df = pd.read_csv("dataset/pelicula.csv")
+    df = pd.read_csv("pelicula.csv")
 
