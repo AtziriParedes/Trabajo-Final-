@@ -6,7 +6,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import pandas as pd
 from bs4 import BeautifulSoup
 
-
+#Al hacer rl wed cambiar a vista detallada que es la figura de tres lineas con puntitos al lado
 def IMDB():
 
     manejador = ChromeDriverManager().install()
