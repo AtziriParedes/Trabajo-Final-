@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox, Toplevel
 from PIL import Image, ImageTk
 import os
-import conectividad as db
+import base_de_Datos as db
 import  codigo as wb
 import pandas as pd
 
