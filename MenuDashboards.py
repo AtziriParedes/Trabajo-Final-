@@ -1,8 +1,6 @@
 import dash
 import dash_bootstrap_components as dbc
 from dash import Input, Output, dcc, html, callback
-
-
 from Dashboards import dashboard_antiguas
 from Dashboards2 import dashboard_rating
 
