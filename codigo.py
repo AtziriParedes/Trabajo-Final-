@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 
 
 def IMDB():
-
+#PARA HACER EL LA RECOLECCION DE DATOS, SELECCIONAR LA OPCION DE VISTA DETALLADA CON LOS LAS LINEAS Y TRES PUNTIITOS
     manejador = ChromeDriverManager().install()
     s = Service(manejador)
     opc = Options()
