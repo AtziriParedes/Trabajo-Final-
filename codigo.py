@@ -35,6 +35,7 @@ def IMDB(pagina):
                 producto["Nombre"].append("No disponible")
 
 
+
             rating = item.find("span", class_="ipc-rating-star--rating")
             if rating:
                 producto["Rating"].append(rating.text.strip())
