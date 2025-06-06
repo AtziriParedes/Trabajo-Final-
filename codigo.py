@@ -85,7 +85,7 @@ def IMDB(pagina):
     df = pd.DataFrame(producto)
     df.to_csv("dataset/pelicula.csv", index=False)
 
-
+#dashboard
 
 if __name__ == "__main__":
     pagina = 6
