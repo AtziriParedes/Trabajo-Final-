@@ -8,7 +8,7 @@ def conexion():
             host='localhost',
             port=3306,
             user='root',
-            password='12345678',
+            password='Josva2309',
             database='peli'
         )
         if conexion.is_connected():

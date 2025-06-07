@@ -1,10 +1,15 @@
 import tkinter as tk
-from tkinter import messagebox, Toplevel
+from tkinter import messagebox
 from PIL import Image, ImageTk
 import os
 import base_de_Datos as db
 import  codigo as wb
 import pandas as pd
+import webbrowser
+import subprocess
+import time
+import sys
+
 
 class peliculassis:
     def __init__(self, root):
@@ -40,8 +45,8 @@ class peliculassis:
         self.btn_mostrar = tk.Button(self.root, text="Guardar datos en Mysql", command=self.guardar_en_bd, **boton_config)
         self.btn_mostrar.pack(pady=5)
 
-        #self.btn_modificar = tk.Button(self.root, text="Dashboard", command=self.modificar_estudiante, **boton_config)
-        #self.btn_modificar.pack(pady=5)
+        self.btn_mostrar = tk.Button(self.root, text="Dashboard", command=self.dash, **boton_config)
+        self.btn_mostrar.pack(pady=5)
 
 
 
@@ -86,8 +91,16 @@ class peliculassis:
         except Exception as e:
             messagebox.showerror("Error", f"Ocurrió un error al guardar los datos:\n{e}")
 
+    def dash(self):
+        try:
+            # esta linea de codigo lo que hace es buscar el archivo del menu para poder ejecutarlo en la pgina principal
+            ruta_script_dash = os.path.join(os.path.dirname(__file__), "MenuDashboards.py")
 
+            # Ejecuta el dashboard en otra ventana sin cerrar este programa
+            subprocess.Popen([sys.executable, ruta_script_dash])
 
+        except Exception as e:
+            messagebox.showerror("Error", f"No se pudo abrir el dashboard:\n{e}")
 if __name__ == "__main__":
     root = tk.Tk()
     app = peliculassis(root)

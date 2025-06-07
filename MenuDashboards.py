@@ -26,7 +26,7 @@ CONTENT_STYLE = {
 
 sidebar = html.Div(
    [
-       html.H2("IMDB", className="display-4", style={"color": "#FE5668"}),
+       html.H2("IMDB", className="display-4", style={"color": "black", "fontWeight": "bold"}),
        html.Hr(),
        html.P("Visualización de películas", className="lead"),
        dbc.Nav(
@@ -61,7 +61,7 @@ app.layout = html.Div([
 def render_page_content(pathname):
    if pathname == "/":
        return html.Div([
-           html.H1("Bienvenido a IMDb Dashboards", style={"color": "#64A002"}),
+           html.H1("Bienvenido a IMDB Dashboards", style={"color": "#64A002"}),
            html.P("Selecciona una opción del menú para comenzar.")
        ])
    elif pathname == "/antiguas":
