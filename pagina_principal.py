@@ -91,7 +91,7 @@ class peliculassis:
 
     def dash(self):
         try:
-            # esta linea de codigo lo que hace es buscar el archivo del menu para poder ejecutarlo en la pgina principal
+            # esta linea de codigo lo que hace es buscar el archivo del menu para poder ejecutarlo en la pgina principal la usamos en el semestre anterior
             ruta_script_dash = os.path.join(os.path.dirname(__file__), "MenuDashboards.py")
 
             # esta linea de codigfo Ejecuta el dashboard en otra ventana sin cerrar este programa

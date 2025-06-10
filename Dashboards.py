@@ -10,7 +10,7 @@ COLORES = ['#FE5668', '#FF8D8F', '#FEC1A5', '#B9D394', '#64A002']
 def dashboard_antiguas():
     conexion = bd.conexion()
     if conexion:
-        engine = create_engine('mysql+mysqlconnector://root:12345678@localhost:3306/peli')
+        engine = create_engine('mysql+mysqlconnector://root:Josva2309@localhost:3306/peli')
 
         query = """
         SELECT p.nombre AS Nombre, a.anio AS Fecha, r.rating AS Rating,
@@ -105,7 +105,7 @@ def dashboard_antiguas():
     Input("slider-cantidad", "value")
 )
 def actualizar_dashboard(cantidad):
-    engine = create_engine('mysql+mysqlconnector://root:12345678@localhost:3306/peli')
+    engine = create_engine('mysql+mysqlconnector://root:Josva2309@localhost:3306/peli')
     query = """
     SELECT p.nombre AS Nombre, a.anio AS Fecha, r.rating AS Rating,
            d.minutos AS duracion, de.descripcion
