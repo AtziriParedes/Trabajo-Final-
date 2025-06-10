@@ -1,10 +1,10 @@
-Proyecto IMDD
+Proyecto IMDB
 
 Este proyecto realiza web scraping de películas de IMDb, guarda los datos en una base de datos MySQL, y permite visualizar dashboards interactivos con Dash, todo controlado desde una interfaz gráfica creada con Tkinter.
 
 FUNCIONALIDADES:
 
-Scraping automático de películas desde IMDD.
+Scraping automático de películas desde IMDB.
 
 Guardado de datos en una base de datos MySQL.
 
