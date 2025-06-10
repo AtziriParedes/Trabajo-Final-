@@ -55,15 +55,15 @@ def dashboard_antiguas():
                 dbc.Col(dbc.Card(dbc.CardBody([
                     html.H6("Películas mostradas", className="card-title"),
                     html.H4(id="kpi-total")
-                ]), color="danger", inverse=True)),
+                ]), color="#FE5668", inverse=True)),
                 dbc.Col(dbc.Card(dbc.CardBody([
                     html.H6("Duración promedio", className="card-title"),
                     html.H4(id="kpi-duracion")
-                ]), color="success", inverse=True)),
+                ]), color="#64A002", inverse=True)),
                 dbc.Col(dbc.Card(dbc.CardBody([
                     html.H6("Rating promedio", className="card-title"),
                     html.H4(id="kpi-rating")
-                ]), color="warning", inverse=True)),
+                ]), color="#FFC32C", inverse=True)),
             ], className="mb-4"),
 
             dbc.Row([
