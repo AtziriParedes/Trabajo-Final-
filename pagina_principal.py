@@ -5,9 +5,7 @@ import os
 import base_de_Datos as db
 import  codigo as wb
 import pandas as pd
-import webbrowser
 import subprocess
-import time
 import sys
 
 
@@ -96,7 +94,7 @@ class peliculassis:
             # esta linea de codigo lo que hace es buscar el archivo del menu para poder ejecutarlo en la pgina principal
             ruta_script_dash = os.path.join(os.path.dirname(__file__), "MenuDashboards.py")
 
-            # Ejecuta el dashboard en otra ventana sin cerrar este programa
+            # esta linea de codigfo Ejecuta el dashboard en otra ventana sin cerrar este programa
             subprocess.Popen([sys.executable, ruta_script_dash])
 
         except Exception as e:
