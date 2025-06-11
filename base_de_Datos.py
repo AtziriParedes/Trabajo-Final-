@@ -12,7 +12,7 @@ def conexion():
             database='peli'
         )
         if conexion.is_connected():
-            print('Conexión exitosa')
+
             return conexion
     except Error as ex:
         print('Error durante la conexión', ex)

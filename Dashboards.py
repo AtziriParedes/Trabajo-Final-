@@ -153,5 +153,3 @@ if __name__ == "__main__":
     app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
     app.layout = dashboard_antiguas()
     app.run(debug=True)
-
-
